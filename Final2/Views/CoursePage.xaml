@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Final2.Views.CoursePage"
+           
+             Title="CoursePage">
+    <StackLayout Padding="10">
+        <Entry Placeholder="Course Code" Keyboard="Numeric" Text="{Binding Course.CourseCode}" />
+        <Entry Placeholder="Course Name" Text="{Binding Course.CourseName}" />
+        <Button Text="Save and Show Enrollments" Clicked="OnSaveAndShowEnrollmentsClicked" />
+    </StackLayout>
+</ContentPage>

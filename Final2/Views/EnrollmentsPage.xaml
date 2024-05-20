@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Final2.Views.EnrollmentsPage"
+             
+            
+             Title="EnrollmentsPage">
+    
+    <StackLayout Padding="10" >
+        <Button x:Name="goBack" VerticalOptions="Center" Text="go back"  Clicked="goBack_Clicked"/>
+        <ListView ItemsSource="{Binding Enrollments}" HasUnevenRows="True" RowHeight="100" BackgroundColor="White" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Vertical"  >
+                            <Label Text="ID" FontAttributes="Bold" FontSize="24"/>
+                            <Label   Text="{Binding ID}"  TextColor="Teal" FontSize="17"/>
+                            <Label Text="NAME" FontAttributes="Bold" FontSize="24"/>
+                            <Label Text="{Binding Name}" TextColor="Teal" FontSize="17"/>
+                            <Label Text="DEPARTMENT" FontAttributes="Bold" FontSize="24"/>
+                            <Label Text="{Binding Department}" TextColor="Teal" FontSize="17"/>
+                            <Label Text="COURSE CODE" FontAttributes="Bold" FontSize="24"/>
+                            <Label Text="{Binding CourseCode}" TextColor="Teal" FontSize="17"/>
+                            <Label Text="COURSE NAME" FontAttributes="Bold" FontSize="24"/>
+                            <Label Text="{Binding CourseName}" TextColor="Teal" FontSize="17" />
+                            
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
