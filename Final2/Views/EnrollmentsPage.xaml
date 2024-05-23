@@ -16,15 +16,15 @@
                         <Frame CornerRadius="10" HasShadow="True" Padding="10" Margin="10"
                                VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
                             <StackLayout Orientation="Vertical" Spacing="10">
-                                <Label Text="ID" FontAttributes="Bold" FontSize="24" />
+                                <Label Text="ID" FontAttributes="Bold" FontSize="24" TextColor="Black"/>
                                 <Label Text="{Binding ID}" TextColor="Teal" FontSize="17" />
-                                <Label Text="NAME" FontAttributes="Bold" FontSize="24" />
+                                <Label Text="NAME" FontAttributes="Bold" FontSize="24" TextColor="Black"/>
                                 <Label Text="{Binding Name}" TextColor="Teal" FontSize="17" />
-                                <Label Text="DEPARTMENT" FontAttributes="Bold" FontSize="24" />
+                                <Label Text="DEPARTMENT" FontAttributes="Bold" FontSize="24" TextColor="Black"/>
                                 <Label Text="{Binding Department}" TextColor="Teal" FontSize="17" />
-                                <Label Text="COURSE CODE" FontAttributes="Bold" FontSize="24" />
+                                <Label Text="COURSE CODE" FontAttributes="Bold" FontSize="24" TextColor="Black"/>
                                 <Label Text="{Binding CourseCode}" TextColor="Teal" FontSize="17" />
-                                <Label Text="COURSE NAME" FontAttributes="Bold" FontSize="24" />
+                                <Label Text="COURSE NAME" FontAttributes="Bold" FontSize="24" TextColor="Black"/>
                                 <Label Text="{Binding CourseName}" TextColor="Teal" FontSize="17" />
                                 <Button Text="Delete" x:Name="deleteButton" Clicked="deleteButton_Clicked" />
                             </StackLayout>

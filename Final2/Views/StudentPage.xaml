@@ -17,5 +17,10 @@
                 <Button Text="Next" Clicked="OnNextClicked" />
             </StackLayout>
         </Frame>
+        <VerticalStackLayout>
+            <Label Text="Student Enroll Page "/>
+            <Label Text="Please Enter Your Information" />
+        </VerticalStackLayout>
     </StackLayout>
+    
 </ContentPage>

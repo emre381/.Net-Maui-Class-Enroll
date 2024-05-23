@@ -7,8 +7,8 @@
     <StackLayout Padding="10">
         <Frame CornerRadius="10" HasShadow="True" Padding="10" Margin="10">
             <StackLayout Padding="10">
-                <Entry Placeholder="Course Code" Keyboard="Numeric" Text="{Binding Course.CourseCode}" />
-                <Entry Placeholder="Course Name" Text="{Binding Course.CourseName}" />
+                <Entry Placeholder="Course Code" Keyboard="Numeric" Text="{Binding Course.CourseCode}" TextColor="Black"/>
+                <Entry Placeholder="Course Name" Text="{Binding Course.CourseName}" TextColor="Black"/>
                 <Button Text="Save and Show Enrollments" Clicked="OnSaveAndShowEnrollmentsClicked" />
             </StackLayout>
         </Frame>
