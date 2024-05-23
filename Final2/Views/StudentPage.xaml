@@ -4,11 +4,18 @@
              x:Class="Final2.Views.StudentPage"
         
              
-             Title="StudentPage">
+             Title="StudentPage"
+             BackgroundColor="White"
+      >
+
     <StackLayout Padding="10">
-        <Entry Placeholder="Student ID" Keyboard="Numeric" Text="{Binding Student.ID}" />
-        <Entry Placeholder="Name" Text="{Binding Student.Name}" />
-        <Entry Placeholder="Department" Text="{Binding Student.Department}" />
-        <Button Text="Next" Clicked="OnNextClicked" />
+        <Frame CornerRadius="10" HasShadow="True" Padding="10" Margin="10">
+            <StackLayout Padding="10">
+                <Entry Placeholder="Student ID" Keyboard="Numeric" Text="{Binding Student.ID}" TextColor="Black"/>
+                <Entry Placeholder="Name" Text="{Binding Student.Name}" TextColor="Black"/>
+                <Entry Placeholder="Department" Text="{Binding Student.Department}" TextColor="Black"/>
+                <Button Text="Next" Clicked="OnNextClicked" />
+            </StackLayout>
+        </Frame>
     </StackLayout>
 </ContentPage>

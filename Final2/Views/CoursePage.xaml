@@ -5,8 +5,12 @@
            
              Title="CoursePage">
     <StackLayout Padding="10">
-        <Entry Placeholder="Course Code" Keyboard="Numeric" Text="{Binding Course.CourseCode}" />
-        <Entry Placeholder="Course Name" Text="{Binding Course.CourseName}" />
-        <Button Text="Save and Show Enrollments" Clicked="OnSaveAndShowEnrollmentsClicked" />
+        <Frame CornerRadius="10" HasShadow="True" Padding="10" Margin="10">
+            <StackLayout Padding="10">
+                <Entry Placeholder="Course Code" Keyboard="Numeric" Text="{Binding Course.CourseCode}" />
+                <Entry Placeholder="Course Name" Text="{Binding Course.CourseName}" />
+                <Button Text="Save and Show Enrollments" Clicked="OnSaveAndShowEnrollmentsClicked" />
+            </StackLayout>
+        </Frame>
     </StackLayout>
 </ContentPage>
