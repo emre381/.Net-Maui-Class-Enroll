@@ -23,7 +23,8 @@
                             <Label Text="{Binding CourseCode}" TextColor="Teal" FontSize="17"/>
                             <Label Text="COURSE NAME" FontAttributes="Bold" FontSize="24"/>
                             <Label Text="{Binding CourseName}" TextColor="Teal" FontSize="17" />
-                            
+                            <Button Text="Delete" x:Name="deleteButton" Clicked="deleteButton_Clicked" />
+
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>

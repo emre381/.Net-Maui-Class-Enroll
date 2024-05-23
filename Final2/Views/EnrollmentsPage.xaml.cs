@@ -16,5 +16,23 @@ namespace Final2.Views
            Navigation.PopToRootAsync();
 
         }
+
+        private void deleteButton_Clicked(object sender, EventArgs e)
+        {
+            var button = sender as Button;
+            if (button != null)
+            {
+                var enrollment = button.BindingContext as Enroll;
+                if (enrollment != null)
+                {
+                    var viewModel = BindingContext as EnrollmentViewModel;
+                    if(viewModel != null)
+                    {
+                        viewModel.Enrollments.Remove(enrollment);
+                    }
+                }
+            }
+
+        }
     }
 }
